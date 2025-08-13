@@ -1,7 +1,7 @@
 from sentence_transformers import SentenceTransformer
 import numpy as np 
 
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('all-MiniLM-L6-v2', backend="onnx")
 
 def parsenp(obj):
   if isinstance(obj, np.ndarray):
