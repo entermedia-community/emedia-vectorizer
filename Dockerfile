@@ -12,4 +12,5 @@ RUN pip install sentence-transformers[onnx]
 
 COPY . /app
 
+EXPOSE 5000
 ENTRYPOINT [ "sh", "entrypoint.sh" ]
