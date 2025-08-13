@@ -1,9 +1,7 @@
 from typing import Any
 
-import cv2
 import numpy as np
 
-import insightface
 from insightface.app import FaceAnalysis
 
 def parsenp(obj):
