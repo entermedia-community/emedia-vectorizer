@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install ffmpeg libsm6 libxext6 -y
 
 RUN pip install -r requirements.txt
 
-RUN pip install -u sentence-transformers[onnx]
+RUN pip install sentence-transformers[onnx]
 
 COPY . /app
 
