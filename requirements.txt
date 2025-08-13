@@ -37,13 +37,8 @@ expiringdict==1.2.2
 facenet-pytorch==2.6.0
 filelock==3.16.1
 fire==0.7.0
-Flask==2.2.5
-flask-babel==3.1.0
-flask-cors==6.0.1
-Flask-Limiter==2.6.3
-Flask-Session==0.4.0
-flask-swagger==0.2.14
-flask-swagger-ui==4.11.1
+Flask==3.0.3
+Flask-Cors==5.0.0
 flatbuffers==25.2.10
 fonttools==4.57.0
 fsspec==2025.3.0
