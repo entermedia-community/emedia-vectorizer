@@ -1,8 +1,11 @@
 from typing import Any
 
 import numpy as np
+import torch
 
 from insightface.app import FaceAnalysis
+
+providers = ["CUDAExecutionProvider"] if torch.cuda.is_available() else ["CPUExecutionProvider"]
 
 def parsenp(obj):
   if isinstance(obj, np.ndarray):
@@ -13,7 +16,7 @@ def parsenp(obj):
     return int(obj)
   return obj
 
-app = FaceAnalysis(name='buffalo_l', providers=['CPUExecutionProvider'], silent=True)
+app = FaceAnalysis(name='buffalo_l', providers=providers, silent=True)
 app.prepare(ctx_id=-1)
 
 def represent(img: np.ndarray) -> Any:
