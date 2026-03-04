@@ -11,4 +11,5 @@ exec uvicorn app:create_app \
 	--interface wsgi \
 	--host "$HOST" \
 	--port "$PORT" \
-	--workers "$WORKERS"
+	--workers "$WORKERS" \
+  > /dev/null 2>&1 &
