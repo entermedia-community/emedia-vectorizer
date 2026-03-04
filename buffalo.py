@@ -13,7 +13,7 @@ def parsenp(obj):
     return int(obj)
   return obj
 
-app = FaceAnalysis(name='buffalo_l', providers=['CUDAExecutionProvider', 'CPUExecutionProvider'], silent=True, root="./")
+app = FaceAnalysis(name='buffalo_l', providers=['CPUExecutionProvider'], silent=True, root="./")
 app.prepare(ctx_id=-1)
 
 def represent(img: np.ndarray) -> Any:
