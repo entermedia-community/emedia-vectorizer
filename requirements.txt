@@ -1,11 +1,8 @@
-torch
-Flask==3.0.3
-Flask-Cors==5.0.0
-insightface
-uvicorn
-pillow
-sentence_transformers[onnx]
-torch
-torchvision
-numpy
-onnxruntime
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+insightface>=0.7.3
+onnxruntime-gpu>=1.17.0   # swap for onnxruntime if no CUDA
+opencv-python-headless>=4.9.0
+numpy>=1.24.0
+pydantic>=2.0.0
+python-multipart>=0.0.9
