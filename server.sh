@@ -11,4 +11,4 @@ exec CUDA_VISIBLE_DEVICES=0 uvicorn app:create_app \
 	--host "$HOST" \
 	--port "$PORT" \
 	--workers "$WORKERS" \
-  > /dev/null 2>&1 &
+  > /dev/null 2>&1
