@@ -10,5 +10,4 @@ exec CUDA_VISIBLE_DEVICES=0 uvicorn app:create_app \
 	--interface wsgi \
 	--host "$HOST" \
 	--port "$PORT" \
-	--workers "$WORKERS" \
-  > /dev/null 2>&1
+	--workers "$WORKERS"
